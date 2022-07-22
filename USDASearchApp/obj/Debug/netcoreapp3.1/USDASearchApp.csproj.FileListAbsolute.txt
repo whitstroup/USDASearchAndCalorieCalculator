@@ -391,3 +391,5 @@ C:\Users\wstroup\source\repos\USDASearchApplication\USDASearchApp\bin\Debug\netc
 C:\Users\wstroup\source\repos\USDASearchApplication\USDASearchApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 C:\Users\wstroup\source\repos\USDASearchApplication\USDASearchApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
 C:\Users\wstroup\source\repos\USDASearchApplication\USDASearchApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\wstroup\source\repos\USDASearchApplication\USDASearchApp\obj\Debug\netcoreapp3.1\Razor\Views\Food\ViewNutrient.cshtml.g.cs
+C:\Users\wstroup\source\repos\USDASearchApplication\USDASearchApp\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs

@@ -2,7 +2,7 @@
 {
     public class Calories
     {
-        public int value { get; set; }
+        public int? value { get; set; }
     }
 
 }

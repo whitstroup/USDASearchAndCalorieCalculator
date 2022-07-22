@@ -20,7 +20,7 @@ namespace USDASearchApp.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Food");
         }
 
         public IActionResult Privacy()

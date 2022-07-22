@@ -20,9 +20,9 @@ namespace USDASearchApp.Controllers
             return View(foods);
         }
 
-        public IActionResult ViewNutrients(int id)
+        public async Task<IActionResult> ViewNutrient(int id)
         {
-            var food = _foodRepository.GetFoodNutrients(id);
+            var food = await _foodRepository.GetFoodNutrients(id);
 
             return View(food);
         }

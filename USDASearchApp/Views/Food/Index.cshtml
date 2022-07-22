@@ -15,7 +15,9 @@
             <th>Name</th>
             <th>Brand</th>
             <th>Descrption</th>
-            <th>Cart</th>
+            <th>
+                <a asp-controller="cart" asp-action="index" >View Cart</a>
+            </th>
 
         </tr>
     </thead>
@@ -23,7 +25,7 @@
     @foreach (var food in Model)
     {
 <tr>
-    <td><a href=/Product/ViewProduct/@food.fdcId>Details</a></td>
+    <td><a href=/Food/ViewNutrient/@food.fdcId>Details</a></td>
     <td>@food.description</td>
     <td>@food.brandOwner</td>
     <td>@food.additionalDescriptions</td>

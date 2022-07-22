@@ -2,6 +2,6 @@
 {
     public class Protein
     {
-        public double value { get; set; }
+        public double? value { get; set; }
     }
 }

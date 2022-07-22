@@ -1,0 +1,38 @@
+﻿@{ Layout = "_Layout";}
+<!DocType html>
+<html>
+<head></head>
+<body>
+    <h3>Cart Page</h3>
+    <div style="padding-bottom: 20px;">
+        <table class="table table-striped table-dark pagination-lg" cellpadding="2" border="1">
+            <tr>
+                <th>Item</th>
+                <th>Calories</th>
+                <th>Sub Total</th>
+            </tr>
+            @foreach (var item in ViewBag.cart)
+            {
+                <tr>
+                    <td>
+                        @item.Food.Descrption
+                    </td>
+                    <td>
+                        @item.Food.LabelNutrients.Calories.Value
+                    </td>
+                </tr>
+                  
+            }
+            <tr>
+                <td align="right" colspan="6">
+                    Total Calories
+                </td>
+                <td>
+                    @ViewBag.total
+                </td>
+            </tr>
+        </table>
+        <a asp-controller="Food" asp-action="index">Continue Shopping</a>
+    </div>
+</body>
+</html>
