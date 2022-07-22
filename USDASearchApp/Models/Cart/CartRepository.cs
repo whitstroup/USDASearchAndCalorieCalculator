@@ -1,6 +1,8 @@
-﻿namespace USDASearchApp.Models.Cart
+﻿using USDASearchApp.Models.Interfaces;
+
+namespace USDASearchApp.Models.Cart
 {
-    public interface CartRepository
+    public class CartRepository : ICartRepository
     {
     }
 }

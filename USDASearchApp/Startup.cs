@@ -7,7 +7,13 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
+using USDASearchApp.API;
+using USDASearchApp.API.Interfaces;
+using USDASearchApp.Models;
+using USDASearchApp.Models.Cart;
+using USDASearchApp.Models.Interfaces;
 
 namespace USDASearchApp
 {
@@ -23,7 +29,14 @@ namespace USDASearchApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpClient();
             services.AddControllersWithViews();
+            services.AddTransient<IHttpClientWrapper, HttpClientWrapper>();
+            services.AddTransient<IUsdaApi, UsdaApi>();
+            services.AddTransient<IFoodRepository, FoodRepository>();
+            services.AddTransient<ICartRepository, CartRepository>();
+
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +54,8 @@ namespace USDASearchApp
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+         
 
             app.UseRouting();
 

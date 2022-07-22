@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WCankrgXruJ35OHzexiU5EqSx8q2JrH4/cHwwKiPkduzGdR+BD4c+Govl3BBVxtkg1w5EAOLbEoQXqRQRoHB2g==",
+  "dgSpecHash": "1ZU49BwZMk1OjlUqzoMjBj7DJmdFdOwFn+/YYaZOh9x+FC/ZtNTX1n48p4mXDYx5o49f3uboVAIAThIkbY/Bkw==",
   "success": true,
   "projectFilePath": "C:\\Users\\wstroup\\source\\repos\\USDASearchApplication\\USDASearchApp\\USDASearchApp.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\wstroup\\.nuget\\packages\\microsoft.codeanalysis.razor\\3.1.20\\microsoft.codeanalysis.razor.3.1.20.nupkg.sha512",
     "C:\\Users\\wstroup\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.6\\microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
     "C:\\Users\\wstroup\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\wstroup\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\wstroup\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\wstroup\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\wstroup\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
