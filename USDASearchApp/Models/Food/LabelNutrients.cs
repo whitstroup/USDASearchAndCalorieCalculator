@@ -3,10 +3,10 @@
         public class LabelNutrients
         {
             public int fdcId { get; set; }
-            public Fat fat { get; set; }
-            public Carbohydrates carbohydrates { get; set; }
-            public Sugars sugars { get; set; }
-            public Protein protein { get; set; }
-            public Calories calories { get; set; }
+            public Fat? fat { get; set; } = new Fat();
+            public Carbohydrates? carbohydrates { get; set; } = new Carbohydrates();
+            public Sugars? sugars { get; set; } = new Sugars();
+            public Protein? protein { get; set; } = new Protein();
+            public Calories? calories { get; set; } = new Calories();
         }
 }

@@ -24,7 +24,7 @@ namespace USDASearchApp.Controllers
         {
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
             ViewBag.cart = cart;
-            ViewBag.total = cart.Sum(item => item.Food.labelNutrients.calories.value != null ? item.Food.labelNutrients.calories.value : 0);
+            ViewBag.total = cart.Sum(item => item.Food.labelNutrients != null && item.Food.labelNutrients.calories != null  ? item.Food.labelNutrients.calories.value : 0);
             return View();
         }
         private int IsExist(int id)
@@ -39,6 +39,18 @@ namespace USDASearchApp.Controllers
             }
             return -1;
         }
+
+        public IActionResult Remove(int id)
+        {
+            List<Item> cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
+            int index = IsExist(id);
+            cart.RemoveAt(index);
+            SessionHelper.SetObjectAsJson(HttpContext.Session, "cart", cart);
+
+            return RedirectToAction("Index");
+        }
+
+
 
         public async Task<IActionResult> Buy(int id)
         {

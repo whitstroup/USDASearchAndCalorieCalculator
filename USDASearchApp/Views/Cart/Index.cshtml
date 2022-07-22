@@ -15,10 +15,13 @@
             {
                 <tr>
                     <td>
-                        @item.Food.Descrption
+                        <a asp-controller="cart" asp-action="remove" asp-route-id="@item.Food.fdcId">Remove Item</a>
                     </td>
                     <td>
-                        @item.Food.LabelNutrients.Calories.Value
+                        @item.Food.description
+                    </td>
+                    <td>
+                        @item.Food.labelNutrients.calories.value
                     </td>
                 </tr>
                   

@@ -1,14 +1,23 @@
 ﻿@model Food
 
-<h3 class="text-white">@Model.description </h3>
+   @using (Html.BeginForm("Search", "Food", FormMethod.Get))
+{
+<p>
+    Find by name: @Html.TextBox("searchString")
+    <input type="submit" value="Search" />
+</p>}
+
+<h3 class="text-black">@Model.description </h3>
 
 <table class="table-dark">
+
+    
     <tr>
         <th>Sugar</th>
         <th>Carbohydrates</th>
         <th>fat</th>
         <th>Protein</th>
-        <th>On Sale</th>
+        <th>Calories</th>
     </tr>
     <tr>
         <td>@Model.labelNutrients.sugars.value</td>
@@ -16,12 +25,11 @@
         <td>@Model.labelNutrients.fat.value</td>
         <td>@Model.labelNutrients.protein.value</td>
         <td>@Model.labelNutrients.calories.value</td>
+            <td align="center">
+        <a asp-controller="cart" asp-action="buy" asp-route-id="@Model.fdcId">AddToCart</a>
+    </td>
     </tr>
 
 </table>
-
-<div style="display: block">
-    <a class="text-white" href="/Product/UpdateProduct/@Model.fdcId">Add To Cart</a>
-</div>
 
 <div style="display: block">

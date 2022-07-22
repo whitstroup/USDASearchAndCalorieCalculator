@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using USDASearchApp.Models;
 using USDASearchApp.Models.Interfaces;
 
 namespace USDASearchApp.Controllers
@@ -23,6 +24,12 @@ namespace USDASearchApp.Controllers
         public async Task<IActionResult> ViewNutrient(int id)
         {
             var food = await _foodRepository.GetFoodNutrients(id);
+
+            if(food == null)
+            {
+                
+                return View(new Food());
+            }
 
             return View(food);
         }

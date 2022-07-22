@@ -13,7 +13,7 @@ namespace USDASearchApp.Models
 
             public string additionalDescriptions { get; set; }
 
-            public LabelNutrients labelNutrients { get; set; }
+            public LabelNutrients? labelNutrients { get; set; } = new LabelNutrients();
         
     }
 }

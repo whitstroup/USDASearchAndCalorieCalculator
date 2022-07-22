@@ -2,6 +2,6 @@
 {
     public class Sugars
     {
-        public double? value { get; set; }
+        public double value { get; set; }
     }
 }

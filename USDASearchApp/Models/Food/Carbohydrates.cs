@@ -2,6 +2,6 @@
 {
     public class Carbohydrates
     {
-        public double? value { get; set; }
+        public double value { get; set; }
     }
 }

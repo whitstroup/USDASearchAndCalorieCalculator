@@ -18,10 +18,6 @@ namespace USDASearchApp.Models
         {
             var food = await _uSdaApi.GetFoodNutrients(fdcid);
 
-            if (food.fdcId == 0)
-            {
-                food.fdcId = fdcid);
-            }
             return food;
         }
 
