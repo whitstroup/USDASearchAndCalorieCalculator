@@ -8,6 +8,6 @@ namespace USDASearchApp.API.Interfaces
     {
         Task<List<Food>> GetAllFood(string foodName);
 
-        Task<Food> GetFood(int fdcid);
+        Task<LabelNutrients> GetFoodNutrients(int fdcid);
     }
 }

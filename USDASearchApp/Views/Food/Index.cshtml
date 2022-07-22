@@ -15,8 +15,7 @@
             <th>Name</th>
             <th>Brand</th>
             <th>Descrption</th>
-            <th>Category ID</th>
-            <th>Add To Cart</th>
+            <th>Cart</th>
 
         </tr>
     </thead>
@@ -29,7 +28,7 @@
     <td>@food.brandOwner</td>
     <td>@food.additionalDescriptions</td>
     <td align="center">
-        <a asp-controller="cart" asp-action="buy" asp-route-id="@food.fdcId">BuyNow</a>
+        <a asp-controller="cart" asp-action="buy" asp-route-id="@food.fdcId">AddToCart</a>
     </td>
    
 </tr>

@@ -7,6 +7,6 @@ namespace USDASearchApp.Models.Interfaces
     {
         Task<List<Food>> SearchFood(string searchString);
 
-        Task<Food> GetFoodDetails(int fdcid);
+        Task<LabelNutrients> GetFoodNutrients(int fdcid);
     }
 }

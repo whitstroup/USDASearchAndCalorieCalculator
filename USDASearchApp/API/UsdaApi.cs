@@ -18,13 +18,13 @@ namespace USDASearchApp.API
             _httpclientWrapper = httpClientWrapper;
         }
 
-        public async Task<Food> GetFood(int fdcid)
+        public async Task<LabelNutrients> GetFoodNutrients(int fdcid)
         {
             var httpResponse = await _httpclientWrapper.GetAsync($"{baseUrl}food/{fdcid}?api_key={apiKey}");
 
-            var food = JsonConvert.DeserializeObject<Food>(httpResponse);
+            var labelNutrients = JsonConvert.DeserializeObject<LabelNutrients>(httpResponse);
 
-            return food;
+            return labelNutrients;
         }
 
         public async Task<List<Food>> GetAllFood(string foodName)

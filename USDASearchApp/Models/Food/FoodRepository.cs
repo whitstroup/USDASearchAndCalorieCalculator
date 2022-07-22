@@ -14,9 +14,9 @@ namespace USDASearchApp.Models
         {
             _uSdaApi = usdaApi;
         }
-        public async Task<Food> GetFoodDetails(int fdcid)
+        public async Task<LabelNutrients> GetFoodNutrients(int fdcid)
         {
-            var food = await _uSdaApi.GetFood(fdcid);
+            var food = await _uSdaApi.GetFoodNutrients(fdcid);
 
             return food;
         }
